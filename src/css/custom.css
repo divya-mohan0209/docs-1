@@ -6,7 +6,36 @@
  */
 
 /* Import fonts. */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Poppins:wght@700&family=Roboto+Mono&display=swap');
+
+/* poppins */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  src: local(''),
+       url('../fonts/Poppins/Poppins-Bold.woff') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Poppins/Poppins-Bold.woff2') format('woff'), /* Modern Browsers */
+}
+
+/* Roboto-Light */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  src: local(''),
+       url('../fonts/Roboto/Roboto-Light.woff') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Roboto/Roboto-Light.woff2') format('woff'), /* Modern Browsers */
+}
+
+/* Space_Mono - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: normal;
+  src: local(''),
+       url('../fonts/Space_Mono/SpaceMono-Regular.woff') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Space_Mono/SpaceMono-Regular.woff2') format('woff'), /* Modern Browsers */
+}
 
 /* You can override the default Infima variables here. */
 :root {
@@ -35,11 +64,15 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
+}
+
+code {
+  font-family: 'Space Mono', monospace;
 }
 
 hr {
